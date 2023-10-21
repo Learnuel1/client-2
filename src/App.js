@@ -3,7 +3,7 @@ import './App.css';
 import {io} from "socket.io-client";
 
 function App() {
-  const socket = io();
+  const socket = io("https://smartmuvas.onrender.com");
   const user ={userId: "12sf7834uioioi53424", receiver: "87hjfgr453228"};
   socket.emit("lock", user);
 
